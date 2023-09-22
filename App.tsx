@@ -36,7 +36,7 @@ function App(): JSX.Element {
   return (
     <SafeAreaView style={styles.container}>
       <WebView
-        source={{uri: 'http://172.30.1.85:5173/'}}
+        source={{uri: 'https://stellular-bublanina-45de4b.netlify.app/'}}
         ref={ref => (this.webview = ref)}
         onMessage={event => {
           if (event.nativeEvent.data === 'check permission') {
